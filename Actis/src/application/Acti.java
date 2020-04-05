@@ -5,4 +5,6 @@ private int igy;
   private int ketto;
   private int harom;
   private int negy;
+  private String ot;
+
 }
