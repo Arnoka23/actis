@@ -6,7 +6,19 @@ private int igy;
   private int harom;
   private int negy;
   private String ot;
-public int getIgy() {
+
+	public Acti(int ketto, int harom, int negy, String ot) {
+		this.ketto = ketto;
+		this.harom = harom;
+		this.negy = negy;
+		this.ot = ot;
+	}
+
+	public Acti(int igy) {
+		this.igy = igy;
+	}
+
+	public int getIgy() {
 	return igy;
 }
 public void setIgy(int igy) {
