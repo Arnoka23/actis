@@ -1,10 +1,8 @@
 package application;
 
-import java.util.ArrayList;
-
 public class Acti {
-
-    String[] rajz = {
+// TODO feladatok pontozása!
+    String[] rajzol = {
             "ködlámpa", "faág", "éjjeliszekrény", "gondolatolvasás", "esőkabát",
             "túristajelzés", "madártoll", "téliálom", "fenyőillat",
             "kenyérpirító", "családfa", "kutatócsoport", "rakott krumpli", "befőttesüveg",
@@ -30,7 +28,17 @@ public class Acti {
             "boroshordó"
     };
 
-
-
+    public int randomnum() {
+        int min = 1;
+        int max = 26;
+        int range = max - min + 1;
+        return (int) (Math.random() * range) + min;
+    }
+// ennek működnie kéne... talán XD
+    /*public void kartya() {
+        System.out.println(rajzol[randomnum()]);
+        System.out.println(beszel[randomnum()]);
+        System.out.println(mutogat[randomnum()]);
+    }*/
 
 }
