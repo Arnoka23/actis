@@ -24,6 +24,7 @@ public class Main /*extends Application*/ {
 		//launch(args);
 		Acti acti = new Acti();
 		System.out.println(acti.randomnum());
+		System.out.println();
 		
 		
 	}
