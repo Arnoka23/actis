@@ -23,9 +23,9 @@ public class Main /*extends Application*/ {
 	public static void main(String[] args) {
 		//launch(args);
 		Acti acti = new Acti();
-		System.out.println(acti.randomnum());
+		System.out.println(Acti.randomnum());
 		System.out.println();
-		
+		Kartya card = new Kartya(Acti.mutogat[acti.randomnum()], Acti.beszel[acti.randomnum()], Acti.rajzol[acti.randomnum()], Acti.mutogat[acti.randomnum()], Acti.beszel[acti.randomnum()], Acti.rajzol[acti.randomnum()]);
 		
 		
 	}
