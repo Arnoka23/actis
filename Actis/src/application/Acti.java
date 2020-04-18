@@ -30,7 +30,7 @@ public class Acti {
 
     public int randomnum() {
         int min = 1;
-        int max = 26;
+        int max = mutogat.length; //26 helyett length, hogy igazodjon a tömb hosszához
         int range = max - min + 1;
         return (int) (Math.random() * range) + min;
     }
