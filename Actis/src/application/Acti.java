@@ -3,7 +3,7 @@ package application;
 public class Acti {
 // TODO feladatok pontozása!
     static String[] rajzol = {
-            "ködlámpa", "faág", "éjjeliszekrény", "gondolatolvasás", "esőkabát",
+    		"ködlámpa", "faág", "éjjeliszekrény", "gondolatolvasás", "esőkabát",
             "túristajelzés", "madártoll", "téliálom", "fenyőillat",
             "kenyérpirító", "családfa", "kutatócsoport", "rakott krumpli", "befőttesüveg",
             "villámcsapás", "elnökválasztás", "vizipóló", "aranyeső", "gumilbda",
@@ -30,7 +30,7 @@ public class Acti {
 
     public static int randomnum() {
         int min = 1;
-        int max = mutogat.length; //26 helyett length, hogy igazodjon a tömb hosszához
+        int max = 28;
         int range = max - min + 1;
         return (int) (Math.random() * range) + min;
     }
