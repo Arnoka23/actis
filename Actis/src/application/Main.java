@@ -1,8 +1,8 @@
 package application;
 	
 import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import dao.Dao;
 import daoimplementek.DaoImplementek;
@@ -13,7 +13,7 @@ import javafx.scene.layout.BorderPane;
 
 
 public class Main /*extends Application*/ {
-//	@Override
+ //	@Override
 //	public void start(Stage primaryStage) {
 //		try {
 //			BorderPane root = new BorderPane();
@@ -24,13 +24,16 @@ public class Main /*extends Application*/ {
 //		} catch(Exception e) {
 //			e.printStackTrace();
 //		}
-//	}
 //	
+	static int counter = 60;
 	public static void main(String[] args) {
 		//launch(args);
 		Acti acti = new Acti();
+
 		//System.out.println(acti.randomnum());
-		System.out.println();
+
+		System.out.println(Acti.randomnum());
+
 		//Dao osztaly meghivása
 		Dao dataAccesObject = new DaoImplementek();
 		
@@ -38,6 +41,7 @@ public class Main /*extends Application*/ {
 		List<String[]> mutatLista = dataAccesObject.listaBeolvasMutogatas();
 		List<String[]> rajzolLista = dataAccesObject.listaBeolvasRajzol();
 		List<String[]> beszelLista = dataAccesObject.listaBeolvasBeszel();
+
 		
 		//Tesztelés, hogy kiad-e mindent
 		/*for (String[] strings : mutatLista) {
@@ -60,8 +64,11 @@ public class Main /*extends Application*/ {
 		
 		//Egy újlap teszt
 		Kartya kartyalap = new Kartya(kivalasztottMutat, kivalasztottBeszel, kivalasztottRajzol, kivalasztottMutat2,
-				kivalasztottBeszel, kivalasztottRajzol2);
+				kivalasztottBeszel2, kivalasztottRajzol2);
 		System.out.println(kartyalap);
 		//OP
+		
+		Idozito ido = new Idozito();
+		ido.idoMero(120);
 	}
 }

@@ -1,6 +1,5 @@
 package application;
 
-import java.util.Arrays;
 
 public class Kartya {
 	private String[] mutogat1;
